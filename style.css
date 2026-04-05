@@ -91,12 +91,10 @@ nav {
   border-bottom: 1px solid var(--cream-dark);
 }
 
-.nav-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  color: var(--wine);
+.nav-logo img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -146,14 +144,16 @@ nav {
    HERO
    ===================== */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 68px;
+  overflow: hidden;
 }
 
 .hero-left {
-  padding: 8% 6% 6% 8%;
+  padding: 6% 6% 6% 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,11 +162,11 @@ nav {
 
 .hero-left h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(52px, 6vw, 80px);
+  font-size: clamp(44px, 5vw, 72px);
   font-weight: 400;
   line-height: 1.05;
   color: var(--text-dark);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .hero-left h1 em {
   font-style: italic;
@@ -178,7 +178,7 @@ nav {
   line-height: 1.7;
   color: var(--text-mid);
   max-width: 320px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
@@ -187,6 +187,7 @@ nav {
   display: grid;
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
+  height: 100%;
 }
 
 .hero-img { overflow: hidden; position: relative; }
