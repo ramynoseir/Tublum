@@ -190,8 +190,20 @@ nav {
   height: 100%;
 }
 
+.hero-top-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
 .hero-img { overflow: hidden; position: relative; }
-.hero-img img { transition: transform 0.6s ease; }
+.hero-img img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.6s ease; 
+}
 .hero-img:hover img { transform: scale(1.03); }
 
 .hero-badge {
@@ -201,6 +213,7 @@ nav {
   background: var(--cream-light);
   padding: 14px 18px;
   opacity: 0.95;
+  border-left: 3px solid var(--wine);
 }
 
 .badge-label {
@@ -259,6 +272,7 @@ nav {
    ===================== */
 .collection {
   padding: 100px 8%;
+  border-top: 1px solid var(--cream-dark);
 }
 
 .collection-header {
@@ -443,6 +457,7 @@ nav {
   padding: 80px 8%;
   gap: 8%;
   align-items: center;
+  border-top: 1px solid var(--cream-dark);
 }
 
 .story-left {
@@ -504,15 +519,14 @@ nav {
   gap: 0;
   margin-top: 40px;
   border-top: 1px solid var(--cream-dark);
+  border-left: 1px solid var(--cream-dark);
 }
 
 .pillar {
-  padding: 20px 0 20px 20px;
-  border-left: 1px solid var(--cream-dark);
+  padding: 20px 20px 20px 20px;
+  border-right: 1px solid var(--cream-dark);
   border-bottom: 1px solid var(--cream-dark);
 }
-
-.pillar:nth-child(odd) { border-left: none; padding-left: 0; }
 
 .pillar h4 {
   font-family: 'Cormorant Garamond', serif;
@@ -547,12 +561,13 @@ footer {
   border-bottom: 1px solid rgba(235, 228, 217, 0.15);
 }
 
-.footer-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  letter-spacing: 0.18em;
+.footer-logo-img {
+  height: 32px;
+  width: auto;
   display: block;
   margin-bottom: 16px;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
 }
 
 .footer-brand p {
@@ -613,8 +628,7 @@ body.ar .hero-right { order: -1; }
 body.ar .story-left { order: 1; }
 body.ar .story-badge { right: auto; left: -20px; border-left: none; border-right: 3px solid var(--wine); }
 body.ar .footer-top { direction: rtl; }
-body.ar .pillar:nth-child(odd) { border-left: 1px solid var(--cream-dark); padding-left: 20px; }
-body.ar .pillar:nth-child(even) { border-left: none; padding-left: 0; }
+body.ar .pillar { padding: 20px; }
 
 /* =====================
    RESPONSIVE
