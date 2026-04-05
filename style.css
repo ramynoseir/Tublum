@@ -188,14 +188,15 @@ nav {
   grid-template-rows: 45% 55%;
   overflow: hidden;
   height: 100%;
-  gap: 0;
+  gap: 2px;
+  background: var(--cream-dark);
 }
 
 .hero-top-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  gap: 0;
+  gap: 2px;
 }
 
 .hero-img { overflow: hidden; position: relative; }
@@ -519,36 +520,16 @@ nav {
 .story-pillars {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
+  column-gap: 40px;
+  row-gap: 32px;
   margin-top: 40px;
-<<<<<<< HEAD
-=======
-  border: 1px solid var(--cream-dark);
->>>>>>> 1afc3a058ebd7d77c437390f31f696068a8de2b4
 }
 
 .pillar {
-<<<<<<< HEAD
-  padding: 20px 24px;
+  padding: 4px 0 4px 20px;
   border-left: 2px solid var(--wine);
-  margin-bottom: 24px;
-=======
-  padding: 20px 24px;
-  border-right: 1px solid var(--cream-dark);
-  border-bottom: 1px solid var(--cream-dark);
->>>>>>> 1afc3a058ebd7d77c437390f31f696068a8de2b4
 }
 
-<<<<<<< HEAD
-.pillar:nth-child(even) { margin-left: 24px; }
-.pillar:last-child, .pillar:nth-last-child(2) { margin-bottom: 0; }
-
-=======
-.pillar:nth-child(even) { border-right: none; }
-.pillar:nth-child(3),
-.pillar:nth-child(4) { border-bottom: none; }
-
->>>>>>> 1afc3a058ebd7d77c437390f31f696068a8de2b4
 .pillar h4 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 18px;
@@ -583,11 +564,11 @@ footer {
 }
 
 .footer-logo-img {
-  height: 32px;
+  height: 48px;
   width: auto;
   display: block;
   margin-bottom: 16px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .footer-brand p {
